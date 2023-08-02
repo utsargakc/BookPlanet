@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="e-commerce website for books">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Utsarga K.C">
+	<title>Book Planet</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		.welc
+		{
+			margin-top: 20px;
+			margin-bottom: 120px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.welc h1
+		{
+			font-size: 75px;
+		}
+		.products
+		{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			flex-flow: wrap;
+			margin-bottom: 40px;
+		}
+		.box
+		{
+			width: 20%;
+			height: auto;
+			margin: 20px;
+			box-sizing: border-box;
+			transition: transform 0.5s;
+			cursor: pointer;
+		}
+		.box p
+		{
+			font-size: 14px;
+		}
+		.box img
+		{
+			width: 100%;
+		}
+		.box:hover
+		{
+			transform: translateY(-10px);
+		}
+		.AboutUs
+		{
+			margin: 10px;
+			padding: 40px;
+		}
+		.AboutUs h3
+		{
+			padding: 15px 0;
+			color: #555;
+		}
+		.AboutUs p, .AboutUs h3
+		{
+			margin: auto;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+	</style>
+</head>
+<body bgcolor="#edf2f2">
+<!---------Container div for navbar and logo----------->	
+	<div class="header">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="images/bookplanet.png" width="165px"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="pages/products.html">Products</a></li>
+					<li><a href="pages/blog.html">Blog</a></li>
+					<li><a href="pages/research.html">Research</a></li>
+					<li><a href="pages/contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+<!--------------Welcome Message---------------->	
+	<div class="welc">
+		<h1>Welcome To<br>Book Planet <font style="color:#ff523b;">!</font></h1>
+	</div>
+<!-----------------------Top picks--------------------->
+	<h2 class="title">Top Picks</h2>
+	<div class="products">
+		<div class="box">
+			<img src="images/pord1.jpg">
+			<h4>The Alchemist</h4>
+			<p>Rs.1500</p>
+		</div>
+		<div class="box">
+			<img src="images/pord28.jpg">
+			<h4>What My Bones Know</h4>
+			<p>Rs.1225</p>
+		</div>
+		<div class="box">
+			<img src="images/pord12.jpg">
+			<h4>A Train To Moscow</h4>
+			<p>Rs.950</p>
+		</div>
+		<div class="box">
+			<img src="images/pord10.jpg">
+			<h4>Lionel Messi</h4>
+			<p>Rs.700</p>
+		</div>
+	</div>
+<!-----------------------Featured Genres--------------------->
+	<h2 class="title">Featured Genres</h2>
+<!----------image slider-------->	
+    <div class="slidercont" id="featured">
+    	<div class="slider">
+    		<div class="slides">
+    			<!------radio buttons------->
+    			<input type="radio" name="radio-btn" id="radio1">
+    			<input type="radio" name="radio-btn" id="radio2">
+    			<input type="radio" name="radio-btn" id="radio3">
+    			<input type="radio" name="radio-btn" id="radio4">
+    			<input type="radio" name="radio-btn" id="radio5">
+    			<input type="radio" name="radio-btn" id="radio6">
+    			<input type="radio" name="radio-btn" id="radio7">
+    			<!----------slide images-------->
+    			<div class="slide first">
+    				<a href="pages/products.html#fic"><img src="images/cat1.png" alt=""></a>
+    			</div>
+    			<div class="slide">
+    				<a href="pages/products.html#bio"><img src="images/cat2.png" alt=""></a>
+    			</div>
+    			<div class="slide">
+    				<a href="pages/products.html#non"><img src="images/cat3.png" alt=""></a>
+    			</div>
+    			<div class="slide">
+    				<a href="pages/products.html#his"><img src="images/cat4.png" alt=""></a>
+    			</div>
+    			<div class="slide">
+    				<a href="pages/products.html#sci"><img src="images/cat5.png" alt=""></a>
+    			</div>
+    			<div class="slide">
+    				<a href="pages/products.html#cil"><img src="images/cat6.png" alt=""></a>
+    			</div>
+    			<div class="slide">
+    				<a href="pages/products.html#self"><img src="images/cat7.png" alt=""></a>
+    			</div>
+    		</div>
+    		<!---------manual navigation--------->
+    		<div class="navigation-manual">
+    			<label for="radio1" class="manual-btn"></label>
+    			<label for="radio2" class="manual-btn"></label>
+    			<label for="radio3" class="manual-btn"></label>
+    			<label for="radio4" class="manual-btn"></label>
+    			<label for="radio5" class="manual-btn"></label>
+    			<label for="radio6" class="manual-btn"></label>
+    			<label for="radio7" class="manual-btn"></label>
+    		</div>
+    	</div>
+    </div>  
+<!-----------------------About US--------------------->	
+	<div class="AboutUs">
+		<h2 class="title">About Us</h2>
+		<h3>Who we are</h3>
+		<p>Book Planet is an online bookstore, physically based in Kathmandu, Nepal, with an aim to create a huge community of readers in Nepal. At Book Planet, you can browse and buy books online at the lowest everyday prices. We provide a large selection of fiction, nonfiction, biographies, history, Science, self-help, and children's books.</p>
+		<h3>Our Philosophy</h3>
+		<p>We believe that bookstores are an essential part of the culture of our society. They’re places where authors share their thoughts and feelings with their readers, where we learn about our history and the universe, where we discover new writers and new ideas, and where children develop a lifelong love of reading through fascinating stories. They're a place where people experience emotions, hobbies and beliefs which they will carry with them for the rest of their lives.</p>
+	</div>
+<!-------------------------footer----------------------->
+	<div class="footer" id="footer">
+		<div class="footer-col-1">
+			<h3>Download Our App</h3>
+			<p>Download for Andriod and Ios.</p>
+			<img src="images/appimg.png" width="165px">
+		</div>
+		<div class="footer-col-2">
+			<img src="images/footerimg.png">
+			<p>Open a book and expand your world.</p>
+		</div>
+		<div class="footer-col-3">
+			<h3>Follow Us</h3>
+			<ul>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Twitter</li>
+				<li>Discord</li>
+			</ul>
+		</div>
+		<hr>
+		<p class="copyright"><font style="color:#ff523b">Copyright &copy; 2022, Book Planet</font></p>
+	</div>		
+</body>
+</html>

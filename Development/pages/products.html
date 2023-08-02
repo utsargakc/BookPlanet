@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="e-commerce website for books">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Utsarga K.C">
+	<title>Products- Book Planet</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style type="text/css">
+		.products
+		{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			flex-flow: wrap;
+		}
+		.box
+		{
+			width: 20%;
+			height: auto;
+			margin: 20px;
+			box-sizing: border-box;
+			transition: transform 0.5s;
+			cursor: pointer;
+		}
+		.box p
+		{
+			font-size: 14px;
+		}
+		.box img
+		{
+			width: 95%;
+		}
+		.box:hover
+		{
+			transform: translateY(-10px);
+		}
+		.category
+		{
+			width: auto;
+			height: auto;
+			margin-bottom: 30px;
+		}
+		.cat_title
+		{
+			text-align:center ;
+		}
+	</style>
+</head>
+<body bgcolor="#edf2f2">
+	<div class="header"><!--Container div for navbar and logo-->
+		<div class="navbar">
+			<div class="logo">
+				<a href="../index.html"><img src="../images/bookplanet.png" width="165px"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+<!-----------------------Products in categories--------------------->
+	<h2 class="title">All Products</h2>
+	<!--------------Fiction--------------->
+	<div class="category" id="fic">
+		<h2 class="cat_title">Fiction</h2><br>
+		<div class="products">
+			<div class="box">
+				<img src="../images/pord1.jpg">
+				<h4>The Alchemist</h4>
+				<p>Rs.1500</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord5.jpg">
+				<h4>Don't Cry For Me</h4>
+				<p>Rs.850</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord7.jpg">
+				<h4>City Of Thieves</h4>
+				<p>Rs.1200</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord8.jpg">
+				<h4>The Last Straw: Dairy Of A Wimpy Kid</h4>
+				<p>Rs.450</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord.jpg">
+				<h4>The Old Man And The Sea</h4>
+				<p>Rs.800</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord6.jpg">
+				<h4>To Kill A Mokingbird</h4>
+				<p>Rs.750</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord2.jpg">
+				<h4>Jonathan Livingston Segull</h4>
+				<p>Rs.900</p>
+			</div>
+		</div>
+	</div>
+	<!--------------Biography--------------->
+	<div class="category" id="bio">
+		<h2 class="cat_title">Biography</h2><br>
+		<div class="products">
+			<div class="box">
+				<img src="../images/pord9.jpg">
+				<h4>Steve Jobs</h4>
+				<p>Rs.1100</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord11.jpg">
+				<h4>Einstine: His Life And Universe</h4>
+				<p>Rs.1000</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord10.jpg">
+				<h4>Lionel Messi</h4>
+				<p>Rs.700</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord4.jpg">
+				<h4>My Life In Full: Indira Nooyi</h4>
+				<p>Rs.900</p>
+			</div>
+		</div>
+	</div>
+	<!--------------Non-fiction--------------->
+	<div class="category" id="non">
+		<h2 class="cat_title">Non-Fiction</h2><br>
+		<div class="products">
+			<div class="box">
+				<img src="../images/pord16.jpg">
+				<h4>The Sixth Extinction</h4>
+				<p>Rs.1175</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord17.jpg">
+				<h4>Animal Farm</h4>
+				<p>Rs.920</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord18.jpg">
+				<h4>This Changes Everything</h4>
+				<p>Rs.475</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord19.jpg">
+				<h4>Doughnut Economics</h4>
+				<p>Rs.675</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord20.jpg">
+				<h4>Cost Of Living</h4>
+				<p>Rs.350</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord22.jpg">
+				<h4>The Savory Baker</h4>
+				<p>Rs.550</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord21.jpg">
+				<h4>The Barcelona Legacy</h4>
+				<p>Rs.1075</p>
+			</div>
+		</div>
+	</div>
+	<!--------------History--------------->
+	<div class="category" id="his">
+		<h2 class="cat_title">History</h2><br>
+		<div class="products">
+			<div class="box">
+				<img src="../images/pord7.jpg">
+				<h4>City Of Thieves</h4>
+				<p>Rs.1200</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord12.jpg">
+				<h4>A Train To Moscow</h4>
+				<p>Rs.950</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord14.jpg">
+				<h4>Sapiens: A Brief History Of Humankind</h4>
+				<p>Rs.550</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord15.jpg">
+				<h4>Singha Durbar: Rise and Fall of the Rana Regime of Nepal</h4>
+				<p>Rs.375</p>
+			</div>
+		</div>
+	</div>
+	<!--------------Science\Science-fiction--------------->
+	<div class="category" id="sci">
+		<h2 class="cat_title">Science / Science-fiction</h2><br>
+		<div class="products">
+			<div class="box">
+				<img src="../images/pord23.jpg">
+				<h4>Artemis</h4>
+				<p>Rs.800</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord3.jpg">
+				<h4>The Power Of Regret</h4>
+				<p>Rs.1200</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord25.jpg">
+				<h4>The Origin Of Species: Charles Darwin</h4>
+				<p>Rs.775</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord24.jpg">
+				<h4>A Brief History Of Time: Stephen Hawking</h4>
+				<p>Rs.1050</p>
+			</div>
+		</div>
+	</div>
+	<!--------------Children's books / Graphic novels--------------->
+	<div class="category" id="cil">
+		<h2 class="cat_title">Children's books / Graphic novels</h2><br>
+		<div class="products">
+			<div class="box">
+				<img src="../images/pord31.jpg">
+				<h4>Harry Potter And The Prisoner Of Azkaban</h4>
+				<p>Rs.1100</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord8.jpg">
+				<h4>The Last Straw: Dairy Of A Wimpy Kid</h4>
+				<p>Rs.450</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord30.jpg">
+				<h4>The Legend Of BrightBlade</h4>
+				<p>Rs.850</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord33.jpg">
+				<h4>Shuri: A Black Panther Novel </h4>
+				<p>Rs.800</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord32.jpg">
+				<h4> Merry Meerkat Madness</h4>
+				<p>Rs.245</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord34.jpg">
+				<h4>Welcome to Dead House: Goosebumps</h4>
+				<p>Rs.430</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord36.jpg">
+				<h4>Naruto</h4>
+				<p>Rs.900</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord35.jpg">
+				<h4>Batman: The Imposter</h4>
+				<p>Rs.870</p>
+			</div>
+		</div>
+	</div>
+	<!--------------Self-help--------------->
+	<div class="category" id="self">
+		<h2 class="cat_title">Self-help</h2><br>
+		<div class="products">
+			<div class="box">
+				<img src="../images/pord26.jpg">
+				<h4>The F*ck It Diet</h4>
+				<p>Rs.575</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord29.jpg">
+				<h4>The Power Of Your Subconscious Mind</h4>
+				<p>Rs.950</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord28.jpg">
+				<h4>What My Bones Know</h4>
+				<p>Rs.1225</p>
+			</div>
+			<div class="box">
+				<img src="../images/pord27.jpg">
+				<h4>Find Your People</h4>
+				<p>Rs.355</p>
+			</div>
+		</div>
+	</div>
+<!-------------------------footer----------------------->
+	<div class="footer">
+		<div class="footer-col-1">
+			<h3>Download Our App</h3>
+			<p>Download for Andriod and Ios.</p>
+			<img src="../images/appimg.png" width="165px">
+		</div>
+		<div class="footer-col-2">
+			<img src="../images/footerimg.png">
+			<p>Open a book and expand your world.</p>
+		</div>
+		<div class="footer-col-3">
+			<h3>Follow Us</h3>
+			<ul>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Twitter</li>
+				<li>Discord</li>
+			</ul>
+		</div>
+		<hr>
+		<p class="copyright"><font style="color:#ff523b">Copyright &copy; 2022, Book Planet</font></p>
+	</div>		
+</body>
+</html>

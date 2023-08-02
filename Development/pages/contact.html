@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="e-commerce website for books">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Utsarga K.C">
+	<title>Contact US- Book Planet</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style type="text/css">
+		h1
+		{
+			color: #edf2f2;
+		}
+		.formcontainer
+		{
+			box-sizing: border-box;
+			margin: auto;
+			margin-bottom: 40px;
+			padding: 30px;
+			padding-left: 60px;
+			width: 45%;
+			height: 100%;
+			position: relative;
+			border-radius: 10px;
+			background: #202121;
+		}
+		form
+		{
+			max-width: 550px;
+			width: 90%;
+		}
+		label
+		{
+			display: block;
+			margin: 10px 0;
+			color: #edf2f2;
+		}
+		input, textarea
+		{
+			width: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+			outline: none;
+			resize: none;
+			border: none;
+			border-radius: 5px;
+			border-bottom: 2px solid #ff523b;
+		}
+		input:focus, textarea:focus
+		{
+			border-bottom: 4px solid #ff523b;
+		}
+		.error
+		{
+			color: #ff523b;
+			border-bottom: 2px solid #ff523b;
+		}
+		
+		#success
+		{
+			color: #edf2f2;
+		}
+		.centre
+		{
+			text-align: center;
+		}
+		input[type="submit"]
+		{
+			margin-top: 30px;
+			width: 90%;
+			max-width: 200px;
+			background: #ff523b;
+			border-radius: 20px;
+			font-size: 17px;
+			color: #edf2f2;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body bgcolor="#edf2f2">
+<!-----------Container div for navbar and logo------------>
+	<div class="header">
+		<div class="navbar">
+			<div class="logo">
+				<a href="../index.html"><img src="../images/bookplanet.png" width="165px"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<!-------------- Contact Form----------------->
+	<div class="formcontainer">
+		<h1 class="title">Contact Us</h1>
+		<form onsubmit="event.preventDefault(); validateform()">
+		   	<label for="fname">First Name:</label>
+		   	<input type="text" id="fname" placeholder="first name...">
+		   	<small class="error"></small>
+
+		    <label for="lname">Last Name:</label>
+		    <input type="text" id="lname" placeholder="last name...">
+		    <small class="error"></small>
+
+		    <label for="email">Email:</label>
+		    <input type="text" id="email" placeholder="name@domain.com">
+		    <small class="error"></small>
+
+		    <label for="message">Message</label>
+		    <textarea id="message" rows="6" placeholder="enter your message here..."></textarea>
+		    <small class="error"></small>
+
+		    <div class="centre">
+		    	<input type="submit" value="Send message">
+		    	<p id="success"></p>
+		    </div>
+		</form>
+	</div>
+    <!--JavaScript for form validation-->
+    <script src="../js/script.js"></script>
+<!-------------------------footer----------------------->
+	<div class="footer">
+		<div class="footer-col-1">
+			<h3>Download Our App</h3>
+			<p>Download for Andriod and Ios.</p>
+			<img src="../images/appimg.png" width="165px">
+		</div>
+		<div class="footer-col-2">
+			<img src="../images/footerimg.png">
+			<p>Open a book and expand your world.</p>
+		</div>
+		<div class="footer-col-3">
+			<h3>Follow Us</h3>
+			<ul>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Twitter</li>
+				<li>Discord</li>
+			</ul>
+		</div>
+		<hr>
+		<p class="copyright"><font style="color:#ff523b">Copyright &copy; 2022, Book Planet</font></p>
+	</div>		
+</body>
+</html>
